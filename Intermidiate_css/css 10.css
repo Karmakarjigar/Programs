@@ -1,0 +1,41 @@
+#face{
+    background-color: yellow;
+    height: 200px;
+    width:200px;
+    border-radius:50%;
+}
+
+div{
+    display:inline-block;
+}
+
+#eye{
+    background-color: black;
+    height:25px;
+    width:25px;
+    position:absolute;
+    top:50px;
+    left:60px;
+    border-radius: 50%;
+}
+
+#eye1{
+    background-color: black;
+    height:25px;
+    width:25px;
+    position:absolute;
+    top:50px;
+    left:140px; 
+    border-radius: 50%;
+}
+
+#m{
+    background-color: rgb(255, 0, 0);
+    height: 50px;
+    width:120px;
+    position:absolute;
+    top:120px;
+    left:50px; 
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+}

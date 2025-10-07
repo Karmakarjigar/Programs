@@ -1,0 +1,38 @@
+
+
+
+#border{
+    width: 40px;
+    height: 100px;
+    background-color: rgb(108, 104, 104);
+    border-style:solid;
+    border-width: 2px;
+}
+
+
+#red{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: red;
+    margin:8px;
+    border: 1.6px solid black;
+}
+
+#yellow{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin:8px;
+    border: 1.6px solid black;
+}
+
+#green{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: green;
+    margin:8px;
+    border: 1.6px solid black;
+}

@@ -1,0 +1,23 @@
+#container{
+    height: 200px;
+    width:80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; /* column or row*/
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    /*align-items: center;*/
+    align-content: space-around;
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height:100px;
+    width:100px;
+    text-align: center;
+}
