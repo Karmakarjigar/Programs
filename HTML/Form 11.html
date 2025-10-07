@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Question 9</title>
+</head>
+<body>
+    <h3>Registration Form </h3>
+    <form action = "/server">
+        <div>
+            <input placeholder = "First name" name = "Fname" required>
+            <input placeholder = "Last name" name = "lname" required>
+        </div>
+        <div>
+           Select your gender
+            <select id = "gender" name = "Gender">
+                <option Value = "Male"> Male </option>
+                <option value="Female"> Female </option>
+            </select>
+        </div>   
+         <div>
+            Do you agree to all terms and condition?
+            <input type = "checkbox" id = "agree" name = "Agree" Value = "Yes" required>
+            <label for = "agree">Yes, i agree</label>
+         </div>
+         <button>Register</button>
+    </form>
+</body>
+</html>

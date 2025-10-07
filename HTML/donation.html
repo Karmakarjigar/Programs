@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            text-align: center;
+            background-image: url(https://plus.unsplash.com/premium_photo-1669863266275-519daef503ce?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2FucGF0aSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: 1600px 800px;
+        }
+
+        hr {
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        p {
+            display: inline-block;
+        }
+
+        #reset {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Donation For Ganpati</h1>
+    <hr>
+    <hr>
+    <br>
+    <form>
+        <label for="Fname">
+            <p class="fw-bold">First name: </p>
+            <input id="Fname" type="text" placeholder="Enter Your First name">
+            <br>
+            <br>
+            <br>
+            <label for="Lname">
+                <p class="fw-bold">Last name: </p>
+            </label>
+            <input id="lname" type="text" placeholder="Enter Your Last name">
+            <br>
+            <br>
+            <br>
+            <label for="pno">
+                <p class="fw-bold">Phone No: </p>
+            </label>
+            <input id="pno" type="text" placeholder="Enter Number">
+            <br>
+            <br>
+            <br>
+            <label for="Email">
+                <p class="fw-bold">Email </p>
+            </label>
+            <input id="Email" type="email" placeholder="Enter Your Email">
+            <br>
+            <br>
+            <br>
+            <label for="pass">
+                <p class="fw-bold">Password: </p>
+            </label>
+            <input id="pass" type="password" placeholder="Enter Password">
+            <br>
+            <br>
+            <br>
+            <label for="cpass">
+                <p class="fw-bold">Confirm Password:</p>
+            </label>
+            <input id="cpass" type="password" placeholder="Confirm your Password">
+
+            <br>
+            <br>
+            <input type="submit" value="Submit" onclick="validate()">
+            <input type="reset" value="Reset" id="reset">
+
+    </form>
+
+    <script>
+        function validate() {
+            const fn = document.getElementById("Fname").value;
+            const ln = document.getElementById("lname").value;
+            const pno = document.getElementById("pno").value;
+            const email = document.getElementById("Email").value;
+            const pwd = document.getElementById("pass").value;
+            const cpwd = document.getElementById("cpass").value;
+
+            if (!fn || !ln || !pno || !email || !pwd) {
+                alert("All fields are mandetory");
+            }
+            else if (pwd != cpwd) {
+                alert("Enter Same password in Both");
+            }
+            else if (pwd.length < 8) {
+                alert("length must be 8 or more");
+            }
+            else if (pno.length == 10) {
+                alert("length must be 10 Digit");
+            }
+            else if (isNaN(pno)) {
+                alert("only number");
+            }
+            else {
+                alert("Successfully Submit");
+            }
+        }
+    </script>
+</body>
+
+</html>

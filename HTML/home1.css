@@ -1,0 +1,70 @@
+body{
+    background-image: url(https://e0.pxfuel.com/wallpapers/898/949/desktop-wallpaper-for-pc-ganpati-trick.jpg);
+    background-repeat: no-repeat;
+    background-size:1600px 1030px;        
+}
+
+#h1{
+    text-align:center;
+    /* color:gold; */
+    font-size:50px;
+}
+
+#h2{
+    text-align:center;
+    /* color:gold; */
+    font-size:50px;
+}
+
+
+#qoute{
+    /* color:#ffffa0; */
+    text-align: left;
+    font-size:20px;
+}
+
+img{
+    margin-left: 40px;
+    border-radius: 50%;
+    
+}
+
+nav{
+    color:aliceblue;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#navigation{
+    margin-bottom: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color:aliceblue;    
+}
+
+#section{
+    height:400px;
+    width:1520px;
+    background-color:rgba(245, 245, 220, 0.6);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.hr1{
+    border:3px solid red; 
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: bisque;
+    text-align: center;
+}
+
+#read{
+    text-decoration:none;
+}
