@@ -1,0 +1,40 @@
+1. Display all employee details ordered by `FIRST_NAME` in ascending order.
+2. Display all employee details ordered by `LAST_NAME` in descending order.
+3. List employee names ordered by `EMPLOYEE_ID` from highest to lowest.
+4. Show the list of employees ordered by `FIRST_NAME`, then by `LAST_NAME`.
+5. Retrieve all employees and order them by `PHONE_NUMBER`.
+6. Display employee records ordered alphabetically by `EMAIL`.
+7. Order the employees by the length of their `FIRST_NAME`.
+8. List employee details ordered by the last character of `LAST_NAME`.
+9. Display the top 3 employees with the smallest `EMPLOYEE_ID` values using `ORDER BY` and `LIMIT`.
+10. List all employees in reverse alphabetical order of their `FIRST_NAME`.
+
+---------------------------------------------
+create table Emp
+(
+EMPLOYEE_ID integer,
+FIRST_NAME text,
+LAST_NAME text,
+EMAIL text,
+PHONE_NUMBER integer
+);
+
+insert into Emp values(1,'Jule','King' ,'SKING',5151234);
+insert into Emp values(2,'Jay','Shetty' ,'SKING',51567);
+insert into Emp values(3,'Even','Ray' ,'SKING',5151);
+insert into Emp values(4,'Kenny','Tales' ,'SKING',34567);
+insert into Emp values(5,'Mark','Roger' ,'SKING',5154567);
+insert into Emp values(6,'Lucas','Bruce' ,'SKING',57);
+insert into Emp values(7,'Steven','King' ,'SKING',51517);
+insert into Emp values(3,'Even','Ray' ,'SKING',5151234567);
+
+---------------------------------------------
+select * from Emp order by FIRST_NAME ASC;
+select * from Emp order by LAST_NAME DESC;
+select * from Emp order by EMPLOYEE_ID DESC;
+select * from Emp order by FIRST_NAME ASC, LAST_NAME ASC;
+select * from Emp order by PHONE_NUMBER;(Order by is defaultly Ascending)
+select * from Emp order by EMAIL;
+select FIRST_NAME,length(FIRST_NAME) as Name_Length from Emp order by NAME_LENGTH ASC; 
+
+

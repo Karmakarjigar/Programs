@@ -1,0 +1,48 @@
+What is the first name of the employee with EMPLOYEE_ID 3?
+
+How many employees have the last name 'King'?
+
+List all employees whose first name starts with the letter 'J'.
+
+What is the total number of employees in the Emp table?
+
+Retrieve the full name (first and last) of the employee with EMPLOYEE_ID 5.
+
+Find all employees who share the same phone number.
+
+Display the email IDs of all employees.
+
+What are the first and last names of employees with EMPLOYEE_ID less than 4?
+
+List all employees whose last name ends with 's'.
+
+What is the EMPLOYEE_ID of the employee named 'Lucas Bruce'?
+
+
+
+------------------------------------------------------------------
+create table Emp
+(
+EMPLOYEE_ID integer,
+FIRST_NAME text,
+LAST_NAME text,
+EMAIL text,
+PHONE_NUMBER integer
+);
+
+insert into Emp values(1,'Steven','King' ,'SKING',5151234567);
+insert into Emp values(2,'Jay','Shetty' ,'SKING',5151234567);
+insert into Emp values(3,'Even','Ray' ,'SKING',5151234567);
+insert into Emp values(4,'Kenny','Tales' ,'SKING',5151234567);
+insert into Emp values(5,'Mark','Roger' ,'SKING',5151234567);
+insert into Emp values(6,'Lucas','Bruce' ,'SKING',5151234567);
+
+select LAST_NAME from Emp where EMPLOYEE_id = 3;
+select count(LAST_NAME) from Emp where LAST_NAME = 'King';
+select count(EMAIL) from Emp where EMAIL = 'SKING';
+SELECT * FROM Emp WHERE FIRST_NAME LIKE 'J%';
+select count(*) from Emp;
+select * from Emp where EMPLOYEE_ID > 4;
+select * from Emp where LAST_NAME like '%s';
+select EMPLOYEE_ID from Emp where FIRST_NAME = 'Lucas' and LAST_NAME = 'Bruce';
+select count(*) from Emp where FIRST_NAME like 'J%';
