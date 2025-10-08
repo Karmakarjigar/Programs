@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="box1">
+        Value 1:
+        <input type="text" id="box1">
+        <br>
+        <br>
+        <label for="box2">
+            Value 2:
+            <input type="text" id="box2">
+            <br>
+            <br>
+            <label for="Answer">
+                Answer:
+                <input type="text" id="Answer">
+                <br>
+                <br>
+                <button type="submit" onclick="sum()">Submit</button>
+
+                <script>
+                    function sum() {
+                        let x = Number(document.getElementById("box1").value);
+                        let y = Number(document.getElementById("box2").value);
+                        if (!x || !y) {
+                            alert("Empty textbox");
+                        }
+                        else {
+                            let result = x + y;
+                            document.getElementById("Answer").value = result;
+                        }
+
+                    }
+                </script>
+</body>
+
+</html>

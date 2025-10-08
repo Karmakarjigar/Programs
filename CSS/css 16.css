@@ -1,0 +1,11 @@
+h1::first-letter{
+    color:blue; 
+}
+
+p::first-line{
+    color:green;
+}
+
+p::selection{
+    background-color: yellowgreen;
+}

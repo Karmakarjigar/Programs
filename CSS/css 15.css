@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(184 234 221);
+    text-align: center;
+}
+
+h1{
+    background-color: rgb(90 121 128);
+}
+
+input, button{
+    background-color: aliceblue;
+}
+
+select{
+    font-weight: 400;
+}
+
+label{
+    font-weight: 600;
+    
+}

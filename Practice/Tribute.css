@@ -1,0 +1,52 @@
+body{
+    background-color:#b0aaaa;
+}
+
+h1{
+    text-align: center;
+   background-color: rgb(167, 69, 69);
+}
+
+#box1{
+    margin-right : 20px;
+    margin-left : 50px;
+}
+
+#box2{
+    margin-right : 20px;
+}
+
+#box3{
+    margin-right : 20px;
+}
+
+#box4{
+    margin-right : 20px;
+}
+
+#heading{
+    font-weight:bold;       
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+p{
+    font-size:15px;
+}
+
+#Achievement{
+    font-weight: 400;
+}
+    
+.tribute-box {
+    max-width:800px;
+    margin: 40px auto;
+   /* max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    */
+}

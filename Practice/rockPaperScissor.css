@@ -1,0 +1,22 @@
+*{
+    text-align:center;
+}
+
+body{
+    background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+}
+
+h3{
+    display:inline-block;
+}
+
+div{
+    max-width: 800px;
+    margin:250px auto;
+}
+
+#head{
+    color: black;
+    background-color: transparent;
+    opacity:0.6;
+}

@@ -1,0 +1,17 @@
+#underline{
+    text-decoration: red underline;
+    line-height: 0.4;
+}
+
+#overline{
+    text-decoration:blue  overline;
+}
+
+#line{
+    text-decoration: green line-through;
+    line-height: 2;
+}
+
+#spacing{
+    letter-spacing: 10px;
+}
