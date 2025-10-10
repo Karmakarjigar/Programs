@@ -7,18 +7,82 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <style>
-        body{
+        body {
             background: url(https://t3.ftcdn.net/jpg/03/39/06/02/360_F_339060225_w8ob8LjMJzPdEqD9UFxbE6ibcKx8dFrP.jpg);
             background-repeat: no-repeat;
-            height: 100vh; /* full screen height */
-            width: 100%;   
+            background-size: cover;
+            display: flex;
+            padding:20px
+        }
+
+        .container {
+            border: 2px solid black;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+        }
+
+        hr {
+            background-color: black;
+        }
+
+        .data {
+            border: 2px solid black;
+            background-color: lightblue;
+            border-radius: 15px;
+        }
+
+        #Add {
+            background-color: blue;
+            color: white;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="text-center">To Do list</h1>
+        <div class="">
+            <h1 class="text-center">To Do list</h1>
+            <hr>
+            <hr>
+            <br>
+            <input type="text" placeholder="What you want to do">
+            <button id="Add">Add</button>
+            <div class="conatiner-fluid">
+                <br>
+                <div class="data">
+                    <label for="input1">
+                        <input type="checkbox" id="inuput1">
+                    </label>
+                    Wake up at 5
+                    <span>❌</span>
+                </div>
+                <br>
+                <div class="data">
+                    <label for="input2">
+                        <input type="checkbox" id="inuput2">
+                    </label>
+                    Drink 4 Litre water
+                    <span>❌</span>
+                </div>
+                <br>
+                <div class="data">
+                    <label for="input3">
+                        <input type="checkbox" id="inuput3">
+                    </label>
+                    running 3 KM
+                    <span>❌</span>
+                </div>
+                <br>
+                <div class="data">
+                    <label for="input4">
+                        <input type="checkbox" id="inuput4">
+                    </label>
+                    Go to Sleep at 10 PM
+                    <span>❌</span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
