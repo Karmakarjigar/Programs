@@ -1,0 +1,28 @@
+        body {
+            background: url(https://t3.ftcdn.net/jpg/03/39/06/02/360_F_339060225_w8ob8LjMJzPdEqD9UFxbE6ibcKx8dFrP.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:20px
+        }
+
+        .container {
+            border: 2px solid black;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+        }
+
+        hr {
+            background-color: black;
+        }
+
+        .data {
+            border: 2px solid black;
+            background-color: lightblue;
+            border-radius: 15px;
+        }
+
+        #Add {
+            background-color: blue;
+            color: white;
+        }
