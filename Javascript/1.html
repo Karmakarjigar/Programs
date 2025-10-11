@@ -4,41 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            background: url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .container {
+            text-align: center;
+            border: 2px solid black;
+            margin-top: 50px;
+            max-width: 400px;
+        }
+
+        hr {
+            border: 2px solid red;
+        }
+    </style>
 </head>
 
 <body>
-    <label for="box1">
-        Value 1:
-        <input type="text" id="box1">
+    <div class="container" style="text-align:center;border: 2px solid black;">
+        <h1>Calculator</h1>
+        <br>
+        <hr>
+        <label for="box1">
+            Value 1:
+            <input type="number" id="box1">
+        </label>
+        <br>
+        <br>
+        <!-- Operator Selection-->
+        <b>Operator:</b>
+        <select id="dropdown">
+            <option id="sub">-</option>
+            <option id="add">+</option>
+            <option id="div">/</option>
+            <option id="multi">*</option>
+        </select>
         <br>
         <br>
         <label for="box2">
             Value 2:
-            <input type="text" id="box2">
-            <br>
-            <br>
-            <label for="Answer">
-                Answer:
-                <input type="text" id="Answer">
-                <br>
-                <br>
-                <button type="submit" onclick="sum()">Submit</button>
+            <input type="number" id="box2">
+        </label>
+        <br>
+        <br>
+        <label for="Answer">
+            Answer:
+            <input type="text" id="Answer" readonly>
+        </label>
+        <br>
+        <br>
+        <button type="submit" onclick="sum()">Submit</button>
+    </div>
+    <script>
+        function sum() {
+            let x = Number(document.getElementById("box1").value);
+            let y = Number(document.getElementById("box2").value);
+            let operator = document.getElementById("dropdown").value;
+            if (!x || !y) {
+                alert("Empty textbox");
+            }
+            else {
+                if (operator == '+') {
+                    let result = x + y;
+                    document.getElementById("Answer").value = result;
+                }
+                else if (operator == '-') {
+                    let result = x - y;
+                    document.getElementById("Answer").value = result;
+                }
+                else if (operator == '/') {
+                    let result = x / y;
+                    document.getElementById("Answer").value = result;
+                }
+                else {
+                    let result = x * y;
+                    document.getElementById("Answer").value = result;
+                }
 
-                <script>
-                    function sum() {
-                        let x = Number(document.getElementById("box1").value);
-                        let y = Number(document.getElementById("box2").value);
-                        if (!x || !y) {
-                            alert("Empty textbox");
-                        }
-                        else {
-                            let result = x + y;
-                            document.getElementById("Answer").value = result;
-                        }
+            }
 
-                    }
-                </script>
+        }
+    </script>
 </body>
 
 </html>
