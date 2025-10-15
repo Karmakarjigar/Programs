@@ -10,3 +10,5 @@
     document.write
     if else if else
 }
+
+2. practice event

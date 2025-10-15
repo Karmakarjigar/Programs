@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button id="submit">submit</button>
+    <script>
+        // btn = document.getElementById("submit");
+
+        // btn.addEventListener('click', function(event){
+        //     alert("Button click");
+        // })
+    </script>
+    <button id="btn">Click Me</button>
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.onclick = function () {
+            alert('Button clicked!');
+        };
+    </script> -->
+    <p id="txt">Yo</p>
+    <button id="click">click</button>
+
+    <script>
+        let txt = document.getElementById("txt");
+        let txt1 = document.getElementById("txt").textContent;
+        let click = document.getElementById("click");
+        let text = "Hello";
+        click.addEventListener("click", function (event) {
+            if (txt.textContent == text) {
+                document.getElementById("txt").innerHTML = txt1;
+            }
+            else {
+                document.getElementById("txt").innerHTML = text;
+            }
+        });
+    </script>
+</body>
+
+</html>
